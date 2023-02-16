@@ -49,8 +49,8 @@ section {
     padding: 0;
     /* border: 1px solid var(--color-tertiary); */
     /* background-color: var(--color-tertiary); */
-    border-radius: 4px;
-    margin-bottom: 20vh;
+    /* border-radius: 4px; */
+    margin-bottom: 10vh;
 }
 
 figure {
@@ -154,7 +154,8 @@ img {
 }
 
 masonry-layout {
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
+    border-bottom: primaryd ;
 }
 
 .masonry figure {
@@ -169,7 +170,8 @@ masonry-layout {
 } */
 
 .masongrid {
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
+    border-bottom: primaryd ;
 }
 
 .grid-item {
