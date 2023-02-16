@@ -97,7 +97,6 @@ img {
 .grid-b img {
     object-fit: cover;
     height: 100%;
-    width: 100%;
 }
 
 .grid-c {
@@ -152,4 +151,12 @@ img {
 .grid-d img {
     max-width: 100%;
     object-fit: contain;
+}
+
+masonry-layout {
+    margin-bottom: 20vh;
+}
+
+.masonry figure {
+    margin-bottom: 24px;
 }
