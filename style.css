@@ -11,7 +11,7 @@ html > * {
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    max-width: 1920px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 1rem;
     color: var(--color-primary);
@@ -67,7 +67,7 @@ img {
 
 .grid-a {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1rem;
     padding: 1rem;
 }
@@ -91,7 +91,7 @@ img {
 }
 
 .grid-b figure {
-    flex: 1 1 500px;
+    flex: 1 1 350px;
 }
 
 .grid-b img {
@@ -107,7 +107,7 @@ img {
 }
 
 .grid-c figure {
-    flex: 1 1 500px;
+    flex: 1 1 350px;
     min-height: 100%;
     display: flex;
     align-items: flex-end;
