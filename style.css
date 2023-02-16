@@ -47,10 +47,10 @@ p {
 section {
     margin: 0;
     padding: 0;
-    /* border: 1px solid var(--color-primary); */
-    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-tertiary);
+    /* background-color: var(--color-tertiary); */
     border-radius: 4px;
-    margin-bottom: 1rem;
+    margin-bottom: 20vh;
 }
 
 figure {
@@ -67,7 +67,7 @@ img {
 
 .grid-a {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 1rem;
     padding: 1rem;
 }
@@ -91,7 +91,7 @@ img {
 }
 
 .grid-b figure {
-    flex: 1 1 400px;
+    flex: 1 1 500px;
 }
 
 .grid-b img {
@@ -108,7 +108,7 @@ img {
 }
 
 .grid-c figure {
-    flex: 1 1 400px;
+    flex: 1 1 500px;
     min-height: 100%;
     display: flex;
     align-items: flex-end;
