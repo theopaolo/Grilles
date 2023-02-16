@@ -1,0 +1,155 @@
+:root {
+    --color-primary: #222;
+    --color-secondary: #fff;
+    --color-tertiary: #eeeeee;
+
+}
+
+html > * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: var(--color-primary);
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 0;
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+
+
+.header {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 1rem 0;
+    text-transform: uppercase;
+
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid var(--color-primary); */
+    background-color: var(--color-tertiary);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.grid-a {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid-a figure {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.grid-a img {
+    max-height: 50vh;
+    object-fit: contain;
+}
+
+.grid-b {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid-b figure {
+    flex: 1 1 400px;
+}
+
+.grid-b img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-c {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.grid-c figure {
+    flex: 1 1 400px;
+    min-height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.grid-c img {
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 45vh;
+}
+
+/* Grid D */
+
+.grid-d {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid-d figure:nth-child(1) {
+    grid-column: span 3;
+}
+
+.grid-d figure:nth-child(2) {
+    grid-column: span 6;
+}
+
+.grid-d figure:nth-child(3) {
+    grid-column: span 3;
+}
+
+.grid-d figure:nth-child(4) {
+    grid-column: span 6;
+}
+
+.grid-d figure:nth-child(5) {
+    grid-column: span 6;
+}
+
+.grid-d img {
+    max-width: 100%;
+    object-fit: contain;
+}

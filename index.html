@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images grid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<h1>Des grilles</h1>
+<div class="grids">
+    <div class="header">
+        <h2>Grilles A</h2>
+        <p>Using :</p>
+        <code>grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));</code>
+    </div>
+    <section class="grid-a">
+        <figure>
+            <img src="/assets/images/mickheael/P_2_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_4_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_3_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_7_00921.jpg">
+        </figure>
+    </section>
+
+    <section class="grid-a">
+        <figure>
+            <img src="/assets/images/mission/P_2_01802.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mission/P_3_01802.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mission/P_4_01802.jpg">
+        </figure>
+    </section>
+
+    <section class="grid-a">
+        <figure>
+            <img src="/assets/images/remi/P_3_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_2_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_4_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_5_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_6_01953.jpg">
+        </figure>
+    </section>
+
+    <div class="header">
+        <h2>Grilles B</h2>
+        <p>Using :</p>
+        <code>
+            .grid-b {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .grid-b img {
+                object-fit: cover;
+                height: 100%;
+            }
+        </code>
+    </div>
+
+    <section class="grid-b">
+        <figure>
+            <img src="/assets/images/mickheael/P_2_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_4_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_3_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_7_00921.jpg">
+        </figure>
+    </section>
+
+    <section class="grid-b">
+        <figure>
+            <img src="/assets/images/remi/P_3_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_2_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_4_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_5_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_6_01953.jpg">
+        </figure>
+    </section>
+
+    <section class="grid-b">
+        <figure>
+            <img src="/assets/images/mission/P_2_01802.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mission/P_3_01802.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mission/P_4_01802.jpg">
+        </figure>
+    </section>
+
+    <div class="header">
+        <h2>Grilles C</h2>
+        <p>Using :</p>
+        <code>
+            .grid-c {
+                display: flex;
+            }
+            .grid-c img {
+                object-fit: contain;
+                width: 100%;
+                max-height: 50vh;
+            }
+        </code>
+    </div>
+
+    <section class="grid-c">
+        <figure>
+            <img src="/assets/images/mickheael/P_2_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_4_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_3_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_7_00921.jpg">
+        </figure>
+    </section>
+
+    <section class="grid-c">
+        <figure>
+            <img src="/assets/images/remi/P_3_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_2_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_4_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_5_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_6_01953.jpg">
+        </figure>
+    </section>
+
+    <section class="grid-c">
+        <figure>
+            <img src="/assets/images/mission/P_2_01802.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mission/P_3_01802.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mission/P_4_01802.jpg">
+        </figure>
+    </section>
+
+
+    <div class="header">
+        <h2>Grilles D</h2>
+        <p>Using :</p>
+        <code>
+            .grid-d {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+            }
+        </code>
+    </div>
+
+    <section class="grid-d">
+        <figure>
+            <img src="/assets/images/mickheael/P_2_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_4_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_3_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_7_00921.jpg">
+        </figure>
+    </section>
+
+    <section class="grid-d">
+        <figure>
+            <img src="/assets/images/remi/P_3_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_2_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_4_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_5_01953.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/remi/P_6_01953.jpg">
+        </figure>
+    </section>
+
+    <section class="grid-d">
+        <figure>
+            <img src="/assets/images/mission/P_2_01802.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mission/P_3_01802.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mission/P_4_01802.jpg">
+        </figure>
+    </section>
+</div>
+</body>
+</html>
