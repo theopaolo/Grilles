@@ -160,3 +160,20 @@ masonry-layout {
 .masonry figure {
     margin-bottom: 24px;
 }
+/*
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+} */
+
+.masongrid {
+    margin-bottom: 20vh;
+}
+
+.grid-item {
+    width: 33.33%;
+    padding: .5rem;
+    box-sizing: border-box;
+}

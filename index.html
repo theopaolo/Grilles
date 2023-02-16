@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <!-- <script defer src="https://unpkg.com/data-masonry@latest/dist/masonry.min.js"></script> -->
 </head>
 
 <body>
@@ -463,7 +465,117 @@
         </figure>
     </masonry-layout>
 
-    <script src="app.js" type="module"></script>
+    <div class="header">
+        <h2>Masonry lib b</h2>
+        <p>Using :</p>
+        <code>
+            <a href="https://github.com/desandro/masonry">https://github.com/desandro/masonry</a>
+        </code>
+    </div>
+
+    <div class="masongrid">
+        <div class="grid-item">
+            <img src="/assets/images/remi/P_3_01953.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/remi/P_2_01953.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/remi/P_4_01953.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/remi/P_5_01953.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/remi/P_6_01953.jpg">
+        </div>
+    </div>
+
+    <section class="masongrid">
+        <div class="grid-item">
+            <img src="/assets/images/mickheael/P_2_00921.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/mickheael/P_4_00921.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/mickheael/P_3_00921.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/mickheael/P_7_00921.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/mickheael/P_6_00921.jpg">
+        </div>
+    </section>
+    <section class="masongrid">
+        <div class="grid-item">
+            <img src="/assets/images/fox/P_2_02408.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/fox/P_3_02408.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/fox/P_4_02408.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/fox/P_5_02408.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/fox/P_6_02408.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/fox/P_7_02408.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/fox/P_8_02408.jpg">
+        </div>
+    </section>
+    <section class="masongrid">
+        <div class="grid-item">
+            <img src="/assets/images/perdrix/P_2_02341.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/perdrix/P_3_02341.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/perdrix/P_4_02341.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/perdrix/P_5_02341.jpg">
+        </div>
+    </section>
+    <section class="masongrid">
+        <div class="grid-item">
+            <img src="/assets/images/train/P_2_01874.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/train/P_3_01874.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/train/P_4_01874.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/train/P_5_01874.jpg">
+        </div>
+        <div class="grid-item">
+            <img src="/assets/images/train/P_6_01874.jpg">
+        </div>
+    </section>
+
+<script>
+    const grids = document.querySelectorAll('.masongrid');
+    window.addEventListener('load', function() {
+        for (var i = 0; i < grids.length; i++) {
+            let grid = grids[i];
+            const msnry = new Masonry(grid, {
+                // options
+                itemSelector: '.grid-item',
+                // columnWidth: 300
+            });
+            }
+    });
+</script>
 </div>
 </body>
 </html>
