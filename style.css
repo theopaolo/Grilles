@@ -13,7 +13,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 1rem;
     color: var(--color-primary);
 }
 
@@ -24,7 +24,22 @@ h1 {
     text-transform: uppercase;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
 
+nav a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
 .header {
     margin-top: 8rem;
     margin-bottom: 1rem;

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,6 @@
 </head>
 
 <body>
-<!-- <h1>Des grilles</h1> -->
 <div class="grids">
     <nav>
         <a href="index.html">Grid A</a>
@@ -20,11 +20,21 @@
         <a href="gridm.html">Masonry</a>
     </nav>
     <div class="header">
-        <h2>Grilles A</h2>
+        <h2>Grilles B</h2>
         <p>Using :</p>
-        <code>grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));</code>
+        <code>
+            .grid-b {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .grid-b img {
+                object-fit: cover;
+                height: 100%;
+            }
+        </code>
     </div>
-    <section class="grid-a">
+
+    <section class="grid-b">
         <figure>
             <img src="/assets/images/mickheael/P_2_00921.jpg">
         </figure>
@@ -42,7 +52,7 @@
         </figure>
     </section>
 
-    <section class="grid-a">
+    <section class="grid-b">
         <figure>
             <img src="/assets/images/remi/P_3_01953.jpg">
         </figure>
@@ -60,7 +70,7 @@
         </figure>
     </section>
 
-    <section class="grid-a">
+    <section class="grid-b">
         <figure>
             <img src="/assets/images/perdrix/P_2_02341.jpg">
         </figure>
@@ -75,7 +85,31 @@
         </figure>
     </section>
 
-    <section class="grid-a">
+    <section class="grid-b">
+        <figure>
+            <img src="/assets/images/fox/P_2_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_3_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_4_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_5_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_6_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_7_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_8_02408.jpg">
+        </figure>
+    </section>
+
+    <section class="grid-b">
         <figure>
             <img src="/assets/images/train/P_2_01874.jpg">
         </figure>
@@ -92,7 +126,6 @@
             <img src="/assets/images/train/P_6_01874.jpg">
         </figure>
     </section>
-
 </div>
 </body>
 </html>

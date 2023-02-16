@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
+
 </head>
 
 <body>
-<!-- <h1>Des grilles</h1> -->
 <div class="grids">
     <nav>
         <a href="index.html">Grid A</a>
@@ -20,29 +21,13 @@
         <a href="gridm.html">Masonry</a>
     </nav>
     <div class="header">
-        <h2>Grilles A</h2>
+        <h2>Masonry lib</h2>
         <p>Using :</p>
-        <code>grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));</code>
+        <code>
+            <a href="https://github.com/andreasbm/masonry-layout">https://github.com/andreasbm/masonry-layout</a>
+        </code>
     </div>
-    <section class="grid-a">
-        <figure>
-            <img src="/assets/images/mickheael/P_2_00921.jpg">
-        </figure>
-        <figure>
-            <img src="/assets/images/mickheael/P_4_00921.jpg">
-        </figure>
-        <figure>
-            <img src="/assets/images/mickheael/P_3_00921.jpg">
-        </figure>
-        <figure>
-            <img src="/assets/images/mickheael/P_7_00921.jpg">
-        </figure>
-        <figure>
-            <img src="/assets/images/mickheael/P_6_00921.jpg">
-        </figure>
-    </section>
-
-    <section class="grid-a">
+    <masonry-layout cols="3" class="masonry">
         <figure>
             <img src="/assets/images/remi/P_3_01953.jpg">
         </figure>
@@ -58,9 +43,25 @@
         <figure>
             <img src="/assets/images/remi/P_6_01953.jpg">
         </figure>
-    </section>
-
-    <section class="grid-a">
+    </masonry-layout>
+    <masonry-layout cols="3" class="masonry">
+        <figure>
+            <img src="/assets/images/mickheael/P_2_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_4_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_3_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_7_00921.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/mickheael/P_6_00921.jpg">
+        </figure>
+    </masonry-layout>
+    <masonry-layout cols="3" class="masonry">
         <figure>
             <img src="/assets/images/perdrix/P_2_02341.jpg">
         </figure>
@@ -73,9 +74,31 @@
         <figure>
             <img src="/assets/images/perdrix/P_5_02341.jpg">
         </figure>
-    </section>
-
-    <section class="grid-a">
+    </masonry-layout>
+    <masonry-layout cols="3" class="masonry">
+        <figure>
+            <img src="/assets/images/fox/P_2_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_3_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_4_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_5_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_6_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_7_02408.jpg">
+        </figure>
+        <figure>
+            <img src="/assets/images/fox/P_8_02408.jpg">
+        </figure>
+    </masonry-layout>
+    <masonry-layout cols="3" class="masonry">
         <figure>
             <img src="/assets/images/train/P_2_01874.jpg">
         </figure>
@@ -91,8 +114,7 @@
         <figure>
             <img src="/assets/images/train/P_6_01874.jpg">
         </figure>
-    </section>
-
+    </masonry-layout>
 </div>
 </body>
 </html>
